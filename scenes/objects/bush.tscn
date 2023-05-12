@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://do5tb6i7xv0qw"]
 
-[ext_resource type="Texture2D" uid="uid://dm2eupr6kjhk8" path="res://graphics/kale.png" id="1_165gx"]
+[ext_resource type="Texture2D" path="res://graphics/kale.png" id="1_165gx"]
 [ext_resource type="Script" path="res://scripts/object_specific/bush.gd" id="1_tvh6p"]
 
 [node name="bush" type="Node2D"]
