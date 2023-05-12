@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://6hfjctv0r6lm"]
+
+[ext_resource type="Script" path="res://scripts/object_specific/dashable.gd" id="1_fkj3j"]
+[ext_resource type="Texture2D" uid="uid://dm2eupr6kjhk8" path="res://graphics/kale.png" id="2_i571r"]
+
+[node name="dashable" type="Node2D"]
+script = ExtResource("1_fkj3j")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_i571r")

@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://bx3vmqth670s7"]
+
+[ext_resource type="Script" path="res://scripts/level_specific/dash_level.gd" id="1_4yd2j"]
+[ext_resource type="Texture2D" uid="uid://dafdy2uu3w80j" path="res://graphics/hotdog.png" id="1_oaivh"]
+[ext_resource type="PackedScene" uid="uid://6hfjctv0r6lm" path="res://scenes/objects/dashable.tscn" id="3_mag04"]
+
+[node name="dash_level" type="Node2D" node_paths=PackedStringArray("beginning_node")]
+script = ExtResource("1_4yd2j")
+beginning_node = NodePath("dashables/dashable")
+
+[node name="Player" type="Sprite2D" parent="."]
+texture = ExtResource("1_oaivh")
+
+[node name="dashables" type="Node" parent="."]
+
+[node name="dashable" parent="dashables" node_paths=PackedStringArray("right_node", "up_node") instance=ExtResource("3_mag04")]
+position = Vector2(69, 146)
+right_node = NodePath("../dashable4")
+up_node = NodePath("../dashable2")
+
+[node name="dashable2" parent="dashables" node_paths=PackedStringArray("right_node", "down_node") instance=ExtResource("3_mag04")]
+position = Vector2(100, 29)
+right_node = NodePath("../dashable3")
+down_node = NodePath("../dashable")
+
+[node name="dashable3" parent="dashables" node_paths=PackedStringArray("left_node", "down_node") instance=ExtResource("3_mag04")]
+position = Vector2(206, 28)
+left_node = NodePath("../dashable2")
+down_node = NodePath("../dashable4")
+
+[node name="dashable4" parent="dashables" node_paths=PackedStringArray("left_node", "up_node") instance=ExtResource("3_mag04")]
+position = Vector2(242, 144)
+left_node = NodePath("../dashable")
+up_node = NodePath("../dashable3")
