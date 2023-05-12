@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dm2eupr6kjhk8"
-path="res://.godot/imported/kale.png-e6d3f8a9b5d60118550eba86f436a53e.ctex"
+uid="uid://cmh06vr2x5w2c"
+path="res://.godot/imported/bush.png-0b859024a61b43dc48ec188b3d46a796.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/kale.png"
-dest_files=["res://.godot/imported/kale.png-e6d3f8a9b5d60118550eba86f436a53e.ctex"]
+source_file="res://graphics/bush.png"
+dest_files=["res://.godot/imported/bush.png-0b859024a61b43dc48ec188b3d46a796.ctex"]
 
 [params]
 
