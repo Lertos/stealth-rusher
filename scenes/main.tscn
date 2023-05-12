@@ -1,13 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://dxihykgpkglym"]
 
 [ext_resource type="AudioStream" uid="uid://2ao8jfph30v1" path="res://audio/hidden_in_the_lush.mp3" id="1_g3wp6"]
-[ext_resource type="PackedScene" uid="uid://bi258gv0scxic" path="res://scenes/levels/level_dash_1.tscn" id="2_ldfbo"]
+[ext_resource type="PackedScene" uid="uid://bx3vmqth670s7" path="res://scenes/levels/dash_level.tscn" id="2_wxvce"]
 
 [node name="root" type="Node2D"]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("1_g3wp6")
 volume_db = -17.0
-autoplay = true
 
-[node name="level_dash_1" parent="." instance=ExtResource("2_ldfbo")]
+[node name="dash_level" parent="." instance=ExtResource("2_wxvce")]
