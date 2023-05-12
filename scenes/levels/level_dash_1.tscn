@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bb71vaeaq4wi5"]
+
+[ext_resource type="Texture2D" uid="uid://dafdy2uu3w80j" path="res://graphics/hotdog.png" id="1_vcmhu"]
+
+[node name="level_dash_1" type="Node2D"]
+
+[node name="Player" type="Sprite2D" parent="."]
+texture = ExtResource("1_vcmhu")
+centered = false
