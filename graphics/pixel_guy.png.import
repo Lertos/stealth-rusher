@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dafdy2uu3w80j"
-path="res://.godot/imported/hotdog.png-3ff5f3e0e545272caecd92d7a2d0e2b3.ctex"
+uid="uid://b300hixl2lkac"
+path="res://.godot/imported/pixel_guy.png-916279d73267cd24e02b8e1988ab4913.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/hotdog.png"
-dest_files=["res://.godot/imported/hotdog.png-3ff5f3e0e545272caecd92d7a2d0e2b3.ctex"]
+source_file="res://graphics/pixel_guy.png"
+dest_files=["res://.godot/imported/pixel_guy.png-916279d73267cd24e02b8e1988ab4913.ctex"]
 
 [params]
 
