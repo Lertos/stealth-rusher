@@ -49,6 +49,7 @@ func _process(delta):
 		
 		#If the player is within range of the destination, just put them there so there is no glitching
 		if (distance_to_destination.x < delta_move_speed and distance_to_destination.y < delta_move_speed):
+			player.position = destination_node.position
 			on_destination_arrival()
 			return
 		
