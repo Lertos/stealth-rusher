@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://dxihykgpkglym"]
+[gd_scene load_steps=2 format=3 uid="uid://dxihykgpkglym"]
 
-[node name="main" type="Node2D"]
+[ext_resource type="AudioStream" uid="uid://2ao8jfph30v1" path="res://audio/hidden_in_the_lush.mp3" id="1_g3wp6"]
+
+[node name="root" type="Node2D"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_g3wp6")
+volume_db = -17.0
+autoplay = true
