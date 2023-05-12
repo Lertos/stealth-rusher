@@ -11,3 +11,4 @@ volume_db = -17.0
 autoplay = true
 
 [node name="level_dash_1" parent="." instance=ExtResource("2_ldfbo")]
+dash_nodes = Array[NodePath]([NodePath("")])

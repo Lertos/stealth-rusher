@@ -1,9 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://bb71vaeaq4wi5"]
+[gd_scene load_steps=4 format=3 uid="uid://bi258gv0scxic"]
 
+[ext_resource type="Script" path="res://scripts/level_specific/dash_level.gd" id="1_2tx73"]
 [ext_resource type="Texture2D" uid="uid://dafdy2uu3w80j" path="res://graphics/hotdog.png" id="1_vcmhu"]
+[ext_resource type="PackedScene" uid="uid://do5tb6i7xv0qw" path="res://scenes/objects/bush.tscn" id="3_a58j4"]
 
-[node name="level_dash_1" type="Node2D"]
+[node name="level_dash_1" type="Node2D" node_paths=PackedStringArray("start_node")]
+script = ExtResource("1_2tx73")
+start_node = NodePath("bush")
 
 [node name="Player" type="Sprite2D" parent="."]
+position = Vector2(162, 77)
 texture = ExtResource("1_vcmhu")
-centered = false
+
+[node name="bush" parent="." node_paths=PackedStringArray("down_node") instance=ExtResource("3_a58j4")]
+position = Vector2(42, 22)
+down_node = NodePath("../bush2")
+
+[node name="bush2" parent="." node_paths=PackedStringArray("up_node") instance=ExtResource("3_a58j4")]
+position = Vector2(45, 121)
+up_node = NodePath("../bush")
