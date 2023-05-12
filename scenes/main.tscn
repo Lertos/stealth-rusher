@@ -10,3 +10,4 @@ stream = ExtResource("1_g3wp6")
 volume_db = -17.0
 
 [node name="dash_level" parent="." instance=ExtResource("2_wxvce")]
+scale = Vector2(1, 0.996876)
