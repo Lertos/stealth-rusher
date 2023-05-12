@@ -13,21 +13,50 @@ beginning_node = NodePath("dashables/dashable")
 [node name="dashables" type="Node" parent="."]
 
 [node name="dashable" parent="dashables" node_paths=PackedStringArray("right_node", "up_node") instance=ExtResource("3_mag04")]
-position = Vector2(69, 146)
-right_node = NodePath("../dashable4")
+position = Vector2(32, 152)
+right_node = NodePath("../dashable9")
 up_node = NodePath("../dashable2")
 
 [node name="dashable2" parent="dashables" node_paths=PackedStringArray("right_node", "down_node") instance=ExtResource("3_mag04")]
-position = Vector2(100, 29)
+position = Vector2(32, 80)
 right_node = NodePath("../dashable3")
 down_node = NodePath("../dashable")
 
-[node name="dashable3" parent="dashables" node_paths=PackedStringArray("left_node", "down_node") instance=ExtResource("3_mag04")]
-position = Vector2(206, 28)
+[node name="dashable3" parent="dashables" node_paths=PackedStringArray("left_node", "right_node", "down_node") instance=ExtResource("3_mag04")]
+position = Vector2(112, 80)
 left_node = NodePath("../dashable2")
+right_node = NodePath("../dashable4")
+down_node = NodePath("../dashable9")
+
+[node name="dashable4" parent="dashables" node_paths=PackedStringArray("left_node", "right_node", "up_node", "down_node") instance=ExtResource("3_mag04")]
+position = Vector2(192, 80)
+left_node = NodePath("../dashable3")
+right_node = NodePath("../dashable7")
+up_node = NodePath("../dashable5")
+down_node = NodePath("../dashable8")
+
+[node name="dashable5" parent="dashables" node_paths=PackedStringArray("right_node", "down_node") instance=ExtResource("3_mag04")]
+position = Vector2(192, 16)
+right_node = NodePath("../dashable6")
 down_node = NodePath("../dashable4")
 
-[node name="dashable4" parent="dashables" node_paths=PackedStringArray("left_node", "up_node") instance=ExtResource("3_mag04")]
-position = Vector2(242, 144)
+[node name="dashable6" parent="dashables" node_paths=PackedStringArray("left_node", "down_node") instance=ExtResource("3_mag04")]
+position = Vector2(280, 16)
+left_node = NodePath("../dashable5")
+down_node = NodePath("../dashable7")
+
+[node name="dashable7" parent="dashables" node_paths=PackedStringArray("left_node", "up_node") instance=ExtResource("3_mag04")]
+position = Vector2(280, 80)
+left_node = NodePath("../dashable4")
+up_node = NodePath("../dashable6")
+
+[node name="dashable8" parent="dashables" node_paths=PackedStringArray("left_node", "up_node") instance=ExtResource("3_mag04")]
+position = Vector2(192, 152)
+left_node = NodePath("../dashable9")
+up_node = NodePath("../dashable4")
+
+[node name="dashable9" parent="dashables" node_paths=PackedStringArray("left_node", "right_node", "up_node") instance=ExtResource("3_mag04")]
+position = Vector2(112, 152)
 left_node = NodePath("../dashable")
+right_node = NodePath("../dashable8")
 up_node = NodePath("../dashable3")
