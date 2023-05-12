@@ -6,7 +6,7 @@ signal player_stopped_moving
 
 @export var beginning_node: Node
 
-@onready var player = $Player
+@onready var player = $player
 
 var start_node: Node
 var destination_node: Node
