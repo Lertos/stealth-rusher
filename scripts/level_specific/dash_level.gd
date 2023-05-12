@@ -1,6 +1,8 @@
 extends Node2D
 
 signal player_moved(direction: int)
+signal player_started_moving
+signal player_stopped_moving
 
 @export var beginning_node: Node
 
@@ -19,6 +21,13 @@ var is_moving: bool = false
 
 
 func _ready():
+	#Setup the player animations for visibility
+	player_started_moving.connect(player.set_visibility_visible)
+	player_stopped_moving.connect(player.set_visibility_invisible)
+	
+	#Default the player to be hidden as they start in a dashable
+	emit_signal("player_stopped_moving")
+	
 	#Setup the start node to the node assigned to the level as the "beginning node"
 	start_node = beginning_node
 	player.position = start_node.position
@@ -68,6 +77,9 @@ func set_new_destination(new_node: Node):
 	#Need to tell the process function we are now moving towards a new destination
 	is_moving = true
 	destination_node = new_node
+	
+	#Let the player script know we started moving
+	emit_signal("player_started_moving")
 
 	#Remove the old signal so it doesn't try to move you to the wrong node
 	player_moved.disconnect(start_node.move_to_node)
@@ -79,3 +91,6 @@ func on_destination_arrival():
 	#When we arrive, the destination now becomes our new start node
 	is_moving = false
 	start_node = destination_node
+	
+	#Let the player script know we started moving
+	emit_signal("player_stopped_moving")
