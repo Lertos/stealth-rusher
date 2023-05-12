@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://c4lcnes4onlge"]
+[gd_scene load_steps=8 format=3 uid="uid://c4lcnes4onlge"]
 
 [ext_resource type="Script" path="res://scripts/level_specific/dash_level.gd" id="1_4yd2j"]
 [ext_resource type="Texture2D" uid="uid://c8tqt6h21jjj6" path="res://graphics/grasslands.png" id="2_8khau"]
 [ext_resource type="PackedScene" uid="uid://b3se2mi5dpato" path="res://scenes/player.tscn" id="2_bwwg1"]
 [ext_resource type="PackedScene" uid="uid://6hfjctv0r6lm" path="res://scenes/objects/dashable.tscn" id="3_mag04"]
+[ext_resource type="PackedScene" uid="uid://wek84u3k0q1m" path="res://scenes/enemy.tscn" id="5_kgqsb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mlkpr"]
 texture = ExtResource("2_8khau")
@@ -856,7 +857,33 @@ layer_2/y_sort_origin = 0
 layer_2/z_index = -1
 layer_2/tile_data = PackedInt32Array(6, 1572864, 8, 65542, 1572864, 9, 131078, 1572864, 10, 7, 1638400, 8, 65543, 1638400, 9, 131079, 1638400, 10, 196615, 1638400, 11, 8, 1703936, 8, 65544, 1703936, 9, 131080, 1703936, 10, 196627, 2031616, 8, 720909, 2031616, 8, 720896, 458752, 16, 720897, 458752, 16, 720898, 458752, 16, 720899, 458752, 16, 720900, 458752, 16, 720901, 458752, 16, 720902, 524288, 16, 65545, 1572864, 1, 196618, 1703936, 3, 524297, 1703936, 1, 458763, 524288, 6, 720906, 1310720, 1, 393235, 1245184, 0, 720915, 1179648, 1, 458756, 1638400, 1, 196616, 917504, 4, 262152, 917504, 5, 196617, 983040, 4, 262153, 983040, 5, 196621, 786432, 3, 13, 786432, 3, 65555, 1835008, 0, 9, 786432, 3, 524288, 786432, 3, 720911, 786432, 3, 458765, 786432, 3, 327695, 786432, 3, 327690, 524288, 4, 327689, 458752, 4, 327688, 458752, 4, 327687, 393216, 4, 393227, 524288, 4, 393226, 589824, 5, 458757, 393216, 4, 524292, 393216, 4, 720904, 524288, 6, 655369, 524288, 6, 589834, 524288, 6, 524298, 524288, 5, 393223, 393216, 5, 458758, 458752, 4, 458759, 655360, 5, 524293, 655360, 5, 655368, 589824, 4, 589833, 589824, 4, 458762, 589824, 4, 589827, 458752, 4, 589826, 458752, 4, 589825, 458752, 4, 589824, 458752, 4, 589828, 655360, 5, 131088, 1572864, 5, 327693, 131072, 13, 196608, 327680, 13, 131075, 327680, 12, 1, 196608, 12, 655375, 196608, 12, 524303, 655360, 12, 589842, 65536, 12, 196614, 65536, 12, 131081, 65536, 12, 655363, 327680, 12, 655360, 589824, 13, 65550, 1769472, 1, 5, 1835008, 1, 327685, 1900544, 1)
 
-[node name="Player" parent="." instance=ExtResource("2_bwwg1")]
+[node name="player" parent="." instance=ExtResource("2_bwwg1")]
+
+[node name="enemies" type="Node2D" parent="."]
+
+[node name="enemy" parent="enemies" instance=ExtResource("5_kgqsb")]
+position = Vector2(32, 40)
+
+[node name="enemy2" parent="enemies" instance=ExtResource("5_kgqsb")]
+position = Vector2(192, 120)
+
+[node name="enemy3" parent="enemies" instance=ExtResource("5_kgqsb")]
+position = Vector2(224, 40)
+
+[node name="enemy4" parent="enemies" instance=ExtResource("5_kgqsb")]
+position = Vector2(168, 32)
+
+[node name="enemy5" parent="enemies" instance=ExtResource("5_kgqsb")]
+position = Vector2(136, 104)
+
+[node name="enemy6" parent="enemies" instance=ExtResource("5_kgqsb")]
+position = Vector2(48, 120)
+
+[node name="enemy7" parent="enemies" instance=ExtResource("5_kgqsb")]
+position = Vector2(248, 160)
+
+[node name="enemy8" parent="enemies" instance=ExtResource("5_kgqsb")]
+position = Vector2(264, 104)
 
 [node name="dashables" type="Node" parent="."]
 
