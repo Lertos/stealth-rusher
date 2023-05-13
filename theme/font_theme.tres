@@ -1,0 +1,21 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://di5081e7i4rvj"]
+
+[ext_resource type="FontFile" uid="uid://cfim16hpdisjh" path="res://toxigenesis.ttf" id="1_dnnq8"]
+
+[resource]
+default_font = ExtResource("1_dnnq8")
+default_font_size = 14
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/constants/outline_size = 4
+Label/colors/font_color = Color(1, 1, 1, 1)
+Label/colors/font_outline_color = Color(0, 0, 0, 1)
+Label/colors/font_shadow_color = Color(0, 0, 0, 1)
+Label/constants/line_spacing = 0
+Label/constants/outline_size = 4
+Label/constants/shadow_offset_x = 0
+Label/constants/shadow_offset_y = 0
+Label/constants/shadow_outline_size = 0
+Label/font_sizes/font_size = 14
+Label/fonts/font = ExtResource("1_dnnq8")
+Label/styles/normal = null
