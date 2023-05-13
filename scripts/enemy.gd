@@ -104,3 +104,13 @@ func start_moving():
 
 func play_die_animation():
 	$action_anim_player.play("die")
+
+
+func on_area_2d_area_entered(area):
+	if area.get_parent().name == "player":
+		is_moving = false
+		play_die_animation()
+
+
+func remove_from_scene():
+	queue_free()
