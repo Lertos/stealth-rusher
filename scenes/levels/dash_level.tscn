@@ -868,19 +868,37 @@ tiles_to_move = 2
 move_speed = 20.0
 
 [node name="enemy2" parent="enemies" instance=ExtResource("5_kgqsb")]
-position = Vector2(216, 120)
+position = Vector2(192, 112)
 
 [node name="enemy3" parent="enemies" instance=ExtResource("5_kgqsb")]
 position = Vector2(224, 40)
 tiles_to_move = 4
 
 [node name="enemy4" parent="enemies" instance=ExtResource("5_kgqsb")]
-position = Vector2(168, 32)
+position = Vector2(184, 32)
 axis_to_move = 1
 tiles_to_move = -1
 
 [node name="enemy5" parent="enemies" instance=ExtResource("5_kgqsb")]
 position = Vector2(136, 104)
+tiles_to_move = 2
+move_both_directions = true
+stop_time_in_secs = 1.2
+
+[node name="enemy9" parent="enemies" instance=ExtResource("5_kgqsb")]
+position = Vector2(144, 112)
+tiles_to_move = 2
+move_both_directions = true
+stop_time_in_secs = 1.2
+
+[node name="enemy10" parent="enemies" instance=ExtResource("5_kgqsb")]
+position = Vector2(152, 120)
+tiles_to_move = 2
+move_both_directions = true
+stop_time_in_secs = 1.2
+
+[node name="enemy11" parent="enemies" instance=ExtResource("5_kgqsb")]
+position = Vector2(160, 128)
 tiles_to_move = 2
 move_both_directions = true
 stop_time_in_secs = 1.2
@@ -893,13 +911,13 @@ move_both_directions = true
 move_speed = 200.0
 
 [node name="enemy7" parent="enemies" instance=ExtResource("5_kgqsb")]
-position = Vector2(248, 160)
+position = Vector2(192, 136)
 tiles_to_move = -3
 stop_time_in_secs = 4.0
 move_speed = 50.0
 
 [node name="enemy8" parent="enemies" instance=ExtResource("5_kgqsb")]
-position = Vector2(264, 104)
+position = Vector2(256, 80)
 axis_to_move = 1
 tiles_to_move = 1
 move_both_directions = true
