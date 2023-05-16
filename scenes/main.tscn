@@ -15,5 +15,5 @@ grow_vertical = 2
 stream = ExtResource("1_g3wp6")
 volume_db = -17.0
 
-[node name="Control" parent="." instance=ExtResource("2_ev8r1")]
+[node name="MainMenu" parent="." instance=ExtResource("2_ev8r1")]
 layout_mode = 1
