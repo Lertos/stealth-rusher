@@ -50,9 +50,6 @@ func load_level_select_screen(type: String):
 	
 	#Load the initial setup
 	node.load_screen(type)
-	
-	#Connect the signals
-	#node.move_from_type_select_to_main_menu.connect(self.load_main_menu_screen)
 
 
 func load_options_screen():
