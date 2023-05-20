@@ -1,0 +1,75 @@
+[gd_scene load_steps=5 format=3 uid="uid://b113woqhbolvg"]
+
+[ext_resource type="Script" path="res://scripts/ui_specific/main_menu.gd" id="1_r4r11"]
+[ext_resource type="PackedScene" uid="uid://4obrxlux0vjs" path="res://scenes/ui/objects/button.tscn" id="2_0exuw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mjpy5"]
+bg_color = Color(0.533333, 0.584314, 0.819608, 1)
+
+[sub_resource type="Theme" id="Theme_lqkn8"]
+/styles/ff = SubResource("StyleBoxFlat_mjpy5")
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = SubResource("Theme_lqkn8")
+script = ExtResource("1_r4r11")
+
+[node name="VB" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="Spacer" type="Label" parent="VB"]
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="VB"]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.552941, 0.215686, 0.294118, 1)
+theme_override_constants/outline_size = 3
+theme_override_constants/shadow_outline_size = 3
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 22
+text = "STEALTH RUSHER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="VB"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="VB" type="VBoxContainer" parent="VB/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+
+[node name="StartButton" parent="VB/MarginContainer/VB" instance=ExtResource("2_0exuw")]
+layout_mode = 2
+text = "START"
+
+[node name="OptionsButton" parent="VB/MarginContainer/VB" instance=ExtResource("2_0exuw")]
+layout_mode = 2
+text = "OPTIONS"
+
+[node name="QuitButton" parent="VB/MarginContainer/VB" instance=ExtResource("2_0exuw")]
+layout_mode = 2
+text = "QUIT"
+
+[connection signal="pressed" from="VB/MarginContainer/VB/StartButton" to="." method="on_start_button_chosen"]
+[connection signal="pressed" from="VB/MarginContainer/VB/OptionsButton" to="." method="on_options_button_chosen"]
+[connection signal="pressed" from="VB/MarginContainer/VB/QuitButton" to="." method="on_quit_button_chosen"]

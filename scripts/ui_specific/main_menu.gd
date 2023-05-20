@@ -1,16 +1,15 @@
 extends Control
 
-@onready var button_group = $Panel/VB/MarginContainer/VB
+signal move_to_level_type_select
+signal move_to_options
 
 
 func on_start_button_chosen():
-	#TODO: This is temporary; it should open the level selector (preloaded scene)
-	get_tree().change_scene_to_file("res://scenes/levels/dash_level.tscn")
+	emit_signal("move_to_level_type_select")
 
 
 func on_options_button_chosen():
-	#TODO: Implement whenever
-	pass
+	emit_signal("move_to_options")
 
 
 func on_quit_button_chosen():
