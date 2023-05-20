@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://uqyu0okxhgq1"]
+[gd_scene load_steps=4 format=3 uid="uid://uqyu0okxhgq1"]
 
 [ext_resource type="PackedScene" uid="uid://4obrxlux0vjs" path="res://scenes/ui/objects/button.tscn" id="1_1c3wb"]
+[ext_resource type="Script" path="res://scripts/ui_specific/level_type_select.gd" id="1_3yijo"]
 [ext_resource type="PackedScene" uid="uid://jiwlsylovbqv" path="res://scenes/ui/objects/small_button.tscn" id="2_c8807"]
 
 [node name="Margin" type="MarginContainer"]
@@ -12,7 +13,8 @@ grow_vertical = 2
 theme_override_constants/margin_left = 6
 theme_override_constants/margin_top = 6
 theme_override_constants/margin_right = 6
-theme_override_constants/margin_bottom = 4
+theme_override_constants/margin_bottom = 6
+script = ExtResource("1_3yijo")
 
 [node name="VB" type="VBoxContainer" parent="."]
 layout_mode = 2
@@ -58,3 +60,7 @@ text = "FREE ROAM"
 layout_mode = 2
 size_flags_horizontal = 4
 text = "MAIN MENU"
+
+[connection signal="pressed" from="VB/VB/Margin/LevelTypes/Dashing" to="." method="select_dashing_level"]
+[connection signal="pressed" from="VB/VB/Margin/LevelTypes/Freeroam" to="." method="select_freeroam_level"]
+[connection signal="pressed" from="VB/MainMenu" to="." method="on_main_menu_pressed"]

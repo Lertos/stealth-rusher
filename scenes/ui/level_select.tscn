@@ -12,7 +12,7 @@ grow_vertical = 2
 theme_override_constants/margin_left = 6
 theme_override_constants/margin_top = 6
 theme_override_constants/margin_right = 6
-theme_override_constants/margin_bottom = 4
+theme_override_constants/margin_bottom = 6
 
 [node name="VB" type="VBoxContainer" parent="."]
 layout_mode = 2
