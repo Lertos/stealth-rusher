@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://qb4cgpuuplk3"]
+[gd_scene load_steps=4 format=3 uid="uid://qb4cgpuuplk3"]
 
 [ext_resource type="PackedScene" uid="uid://jiwlsylovbqv" path="res://scenes/ui/objects/small_button.tscn" id="1_400t8"]
+[ext_resource type="Script" path="res://scripts/ui_specific/level_select.gd" id="1_v3w6v"]
 [ext_resource type="PackedScene" uid="uid://byulf7g5x8sng" path="res://scenes/ui/objects/level_button.tscn" id="2_u3vly"]
 
 [node name="Margin" type="MarginContainer"]
@@ -13,6 +14,7 @@ theme_override_constants/margin_left = 6
 theme_override_constants/margin_top = 6
 theme_override_constants/margin_right = 6
 theme_override_constants/margin_bottom = 6
+script = ExtResource("1_v3w6v")
 
 [node name="VB" type="VBoxContainer" parent="."]
 layout_mode = 2
@@ -35,14 +37,17 @@ layout_mode = 2
 alignment = 1
 
 [node name="Easy" parent="VB/Difficulties" instance=ExtResource("1_400t8")]
+custom_minimum_size = Vector2(39, 0)
 layout_mode = 2
 text = "EASY"
 
 [node name="Medium" parent="VB/Difficulties" instance=ExtResource("1_400t8")]
+custom_minimum_size = Vector2(39, 0)
 layout_mode = 2
 text = "MEDIUM"
 
 [node name="Hard" parent="VB/Difficulties" instance=ExtResource("1_400t8")]
+custom_minimum_size = Vector2(39, 0)
 layout_mode = 2
 text = "HARD"
 
@@ -236,9 +241,11 @@ layout_mode = 2
 text = "MAIN MENU"
 
 [node name="Previous" parent="VB/Actions" instance=ExtResource("1_400t8")]
+custom_minimum_size = Vector2(52, 0)
 layout_mode = 2
 text = "PREVIOUS"
 
 [node name="Next" parent="VB/Actions" instance=ExtResource("1_400t8")]
+custom_minimum_size = Vector2(52, 0)
 layout_mode = 2
 text = "NEXT"
