@@ -3,19 +3,40 @@ extends Control
 const MAIN_MENU_SCREEN := preload("res://scenes/ui/main_menu.tscn")
 const LEVEL_TYPE_SELECT_SCREEN := preload("res://scenes/ui/level_type_select.tscn")
 
+@onready var panel_node = $Panel
+
 
 func _ready():
-	$Panel/MainMenu.move_to_level_type_select.connect(self.load_level_type_select_screen)
-	$Panel/MainMenu.move_to_options.connect(self.load_options_screen)
+	load_main_menu_screen()
+
+
+#Removes all menus from the panel; useful to call before loading a new screen
+func remove_panel_children():
+	for child in panel_node.get_children():
+		child.queue_free()
+
+
+func load_main_menu_screen():
+	remove_panel_children()
+	
+	var node = MAIN_MENU_SCREEN.instantiate()
+	
+	panel_node.add_child(node)
+	
+	#Connect the signals
+	node.move_to_level_type_select.connect(self.load_level_type_select_screen)
+	node.move_to_options.connect(self.load_options_screen)
 
 
 func load_level_type_select_screen():
-	#Create a new instance of the level selector scene node
+	remove_panel_children()
+	
 	var node = LEVEL_TYPE_SELECT_SCREEN.instantiate()
 	
-	#Add the new node to the panel node and remove the main menu; essentially transitioning
-	$Panel.add_child(node)
-	$Panel/MainMenu.queue_free()
+	panel_node.add_child(node)
+	
+	#Connect the signals
+	node.move_from_type_select_to_main_menu.connect(self.load_main_menu_screen)
 
 
 func load_options_screen():
