@@ -1,8 +1,7 @@
 extends MarginContainer
 
 signal move_from_type_select_to_main_menu
-signal move_to_dashing_levels
-signal move_to_freeroam_levels
+signal move_to_level_select(type: String)
 
 
 func on_main_menu_pressed():
@@ -13,8 +12,8 @@ func on_main_menu_pressed():
 #=========================
 
 func select_dashing_level():
-	emit_signal("move_to_dashing_levels")
+	emit_signal("move_to_level_select", "dashing")
 
 
 func select_freeroam_level():
-	emit_signal("move_to_freeroam_levels")
+	emit_signal("move_to_level_select", "freeroam")
