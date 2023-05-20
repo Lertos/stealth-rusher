@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://cbtp2cf0n5dy1"]
+[gd_scene load_steps=5 format=3 uid="uid://ynmroe6d1lsg"]
 
 [ext_resource type="AudioStream" uid="uid://2ao8jfph30v1" path="res://audio/hidden_in_the_lush.mp3" id="1_g3wp6"]
-[ext_resource type="Script" path="res://scenes/main.gd" id="1_vhaud"]
+[ext_resource type="Script" path="res://scripts/ui_specific/main.gd" id="1_yt867"]
 [ext_resource type="PackedScene" uid="uid://b113woqhbolvg" path="res://scenes/ui/main_menu.tscn" id="2_ev8r1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1451p"]
@@ -19,7 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_vhaud")
+script = ExtResource("1_yt867")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("1_g3wp6")
