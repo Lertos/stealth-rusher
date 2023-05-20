@@ -61,42 +61,52 @@ layout_mode = 2
 alignment = 1
 
 [node name="Button" parent="VB/Levels/Row1" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button2" parent="VB/Levels/Row1" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button3" parent="VB/Levels/Row1" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button4" parent="VB/Levels/Row1" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button5" parent="VB/Levels/Row1" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button6" parent="VB/Levels/Row1" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button7" parent="VB/Levels/Row1" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button8" parent="VB/Levels/Row1" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button9" parent="VB/Levels/Row1" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button10" parent="VB/Levels/Row1" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
@@ -105,42 +115,52 @@ layout_mode = 2
 alignment = 1
 
 [node name="Button" parent="VB/Levels/Row2" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button2" parent="VB/Levels/Row2" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button3" parent="VB/Levels/Row2" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button4" parent="VB/Levels/Row2" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button5" parent="VB/Levels/Row2" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button6" parent="VB/Levels/Row2" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button7" parent="VB/Levels/Row2" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button8" parent="VB/Levels/Row2" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button9" parent="VB/Levels/Row2" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button10" parent="VB/Levels/Row2" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
@@ -149,42 +169,52 @@ layout_mode = 2
 alignment = 1
 
 [node name="Button" parent="VB/Levels/Row3" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button2" parent="VB/Levels/Row3" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button3" parent="VB/Levels/Row3" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button4" parent="VB/Levels/Row3" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button5" parent="VB/Levels/Row3" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button6" parent="VB/Levels/Row3" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button7" parent="VB/Levels/Row3" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button8" parent="VB/Levels/Row3" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button9" parent="VB/Levels/Row3" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button10" parent="VB/Levels/Row3" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
@@ -193,42 +223,52 @@ layout_mode = 2
 alignment = 1
 
 [node name="Button" parent="VB/Levels/Row4" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button2" parent="VB/Levels/Row4" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button3" parent="VB/Levels/Row4" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button4" parent="VB/Levels/Row4" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button5" parent="VB/Levels/Row4" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button6" parent="VB/Levels/Row4" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button7" parent="VB/Levels/Row4" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button8" parent="VB/Levels/Row4" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button9" parent="VB/Levels/Row4" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
 [node name="Button10" parent="VB/Levels/Row4" instance=ExtResource("2_u3vly")]
+visible = false
 layout_mode = 2
 text = "1"
 
