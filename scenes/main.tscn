@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://dxihykgpkglym"]
+[gd_scene load_steps=3 format=3]
 
 [ext_resource type="AudioStream" uid="uid://2ao8jfph30v1" path="res://audio/hidden_in_the_lush.mp3" id="1_g3wp6"]
-[ext_resource type="PackedScene" uid="uid://c7tbje6y4nvv3" path="res://scenes/level_selector.tscn" id="2_ev8r1"]
+[ext_resource type="PackedScene" uid="uid://c7tbje6y4nvv3" path="res://scenes/ui/main_menu.tscn" id="2_ev8r1"]
 
 [node name="root" type="Control"]
 layout_mode = 3
