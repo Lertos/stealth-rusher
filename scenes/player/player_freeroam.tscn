@@ -1,7 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://b3se2mi5dpato"]
+[gd_scene load_steps=10 format=3 uid="uid://cbqptg6uogkl4"]
 
-[ext_resource type="Script" path="res://scripts/player.gd" id="1_6sjgk"]
-[ext_resource type="Texture2D" uid="uid://b300hixl2lkac" path="res://graphics/pixel_guy.png" id="2_se5jk"]
+[ext_resource type="Script" path="res://scripts/player/player_freeroam.gd" id="1_twj52"]
+[ext_resource type="Texture2D" uid="uid://b300hixl2lkac" path="res://graphics/pixel_guy.png" id="2_pxqf6"]
 
 [sub_resource type="Animation" id="Animation_pmn4a"]
 length = 0.001
@@ -90,13 +90,16 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f5yid"]
 size = Vector2(10, 10)
 
-[node name="player" type="Node2D"]
-script = ExtResource("1_6sjgk")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_46wtn"]
+size = Vector2(10, 10)
+
+[node name="player" type="CharacterBody2D"]
+script = ExtResource("1_twj52")
 
 [node name="Sprite" type="Sprite2D" parent="."]
 z_index = 10
 scale = Vector2(1.25, 1.25)
-texture = ExtResource("2_se5jk")
+texture = ExtResource("2_pxqf6")
 hframes = 9
 
 [node name="action_anim_player" type="AnimationPlayer" parent="."]
@@ -114,3 +117,7 @@ libraries = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_f5yid")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_46wtn")

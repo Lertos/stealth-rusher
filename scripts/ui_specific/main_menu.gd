@@ -5,7 +5,7 @@ extends Control
 
 func on_start_button_chosen():
 	#TODO: This is temporary; it should open the level selector (preloaded scene)
-	get_tree().change_scene_to_file("res://scenes/levels/freeroam_level.tscn")
+	get_tree().change_scene_to_file("res://scenes/levels/dash_level.tscn")
 
 
 func on_options_button_chosen():
