@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://uqyu0okxhgq1"]
+[gd_scene load_steps=3 format=3 uid="uid://uqyu0okxhgq1"]
 
 [ext_resource type="PackedScene" uid="uid://4obrxlux0vjs" path="res://scenes/ui/objects/button.tscn" id="1_1c3wb"]
+[ext_resource type="PackedScene" uid="uid://jiwlsylovbqv" path="res://scenes/ui/objects/small_button.tscn" id="2_c8807"]
 
 [node name="Margin" type="MarginContainer"]
 anchors_preset = 15
@@ -9,7 +10,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 6
-theme_override_constants/margin_top = 10
+theme_override_constants/margin_top = 6
 theme_override_constants/margin_right = 6
 theme_override_constants/margin_bottom = 4
 
@@ -52,3 +53,8 @@ text = "DASHING"
 [node name="Freeroam" parent="VB/VB/Margin/LevelTypes" instance=ExtResource("1_1c3wb")]
 layout_mode = 2
 text = "FREE ROAM"
+
+[node name="MainMenu" parent="VB" instance=ExtResource("2_c8807")]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "MAIN MENU"
