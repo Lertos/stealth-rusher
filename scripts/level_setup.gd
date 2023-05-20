@@ -12,30 +12,30 @@ var levels = {
 		"display_name": "DASH LEVELS",
 		"location_of_levels": "res://scenes/levels/final/dash/",
 		"level_list": {
-			"easy": [
+			Enums.level_difficulty.EASY: [
 				{
 					"scene_name": "1",
 					"unlocked": true
 					#More data here such as "highscore", etc
 				}
 			],
-			"medium": [],
-			"hard": []
+			Enums.level_difficulty.MEDIUM: [],
+			Enums.level_difficulty.HARD: []
 		}
 	},
 	"freeroam": {
 		"display_name": "FREE ROAM LEVELS",
 		"location_of_levels": "res://scenes/levels/final/freeroam/",
 		"level_list": {
-			"easy": [
+			Enums.level_difficulty.EASY: [
 				{
 					"scene_name": "1",
 					"unlocked": true
 					#More data here such as "highscore", etc
 				}
 			],
-			"medium": [],
-			"hard": []
+			Enums.level_difficulty.MEDIUM: [],
+			Enums.level_difficulty.HARD: []
 		}
 	}
 }
