@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3es5jer04vpl"]
+
+[ext_resource type="PackedScene" uid="uid://cbqptg6uogkl4" path="res://scenes/player/player_freeroam.tscn" id="1_uoxx0"]
+
+[node name="freeroam_level" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1_uoxx0")]
+position = Vector2(159, 90)
