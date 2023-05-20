@@ -1,6 +1,7 @@
 extends Control
 
 signal move_to_level_type_select
+signal move_to_options
 
 
 func on_start_button_chosen():
@@ -8,8 +9,7 @@ func on_start_button_chosen():
 
 
 func on_options_button_chosen():
-	#TODO: Implement whenever
-	pass
+	emit_signal("move_to_options")
 
 
 func on_quit_button_chosen():
