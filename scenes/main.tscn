@@ -36,3 +36,5 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_1451p")
 
 [node name="MainMenu" parent="Panel" instance=ExtResource("2_ev8r1")]
 layout_mode = 1
+
+[node name="CurrentLevel" type="Node2D" parent="."]

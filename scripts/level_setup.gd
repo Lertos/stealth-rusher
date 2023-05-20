@@ -14,8 +14,15 @@ var levels = {
 		"level_list": {
 			Enums.level_difficulty.EASY: [
 				{
-					"scene_name": "1",
+					"level_number": "1",
+					"scene_file_name": "1",
 					"unlocked": true
+					#More data here such as "highscore", etc
+				},
+				{
+					"level_number": "2",
+					"scene_file_name": "2",
+					"unlocked": false
 					#More data here such as "highscore", etc
 				}
 			],
@@ -29,7 +36,8 @@ var levels = {
 		"level_list": {
 			Enums.level_difficulty.EASY: [
 				{
-					"scene_name": "1",
+					"level_number": "1",
+					"scene_file_name": "1",
 					"unlocked": true
 					#More data here such as "highscore", etc
 				}
