@@ -17,6 +17,7 @@ config/features=PackedStringArray("4.0", "Mobile")
 [autoload]
 
 Enums="*res://scripts/enums.gd"
+LevelSetup="*res://scripts/level_setup.gd"
 
 [display]
 
